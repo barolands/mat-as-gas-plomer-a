@@ -47,6 +47,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        whatsapp: {
+          DEFAULT: "hsl(var(--whatsapp))",
+          foreground: "hsl(var(--whatsapp-foreground))",
+        },
+        "service-gas": {
+          DEFAULT: "hsl(var(--service-gas))",
+          bg: "hsl(var(--service-gas-bg))",
+        },
+        "service-plumbing": {
+          DEFAULT: "hsl(var(--service-plumbing))",
+          bg: "hsl(var(--service-plumbing-bg))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
