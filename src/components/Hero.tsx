@@ -1,4 +1,4 @@
-import { MessageCircle, ShieldCheck } from "lucide-react";
+import { MapPin, MessageCircle, ShieldCheck } from "lucide-react";
 import collageBathroom from "@/assets/hero-collage-bathroom.jpg";
 import collageKitchen from "@/assets/hero-kitchen.jpg";
 import collageWorker from "@/assets/hero-collage-worker.jpg";
@@ -68,6 +68,11 @@ const Hero = () => (
         <span className="flex items-center gap-2">
           <ShieldCheck className="w-5 h-5" />
           Trabajo garantizado
+        </span>
+        <span className="w-1 h-1 rounded-full bg-primary-foreground/40 hidden sm:block" />
+        <span className="flex items-center gap-2">
+          <MapPin className="w-5 h-5" />
+          Zona: Conurbano y CABA
         </span>
       </div>
     </div>
