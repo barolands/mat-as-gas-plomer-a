@@ -1,5 +1,5 @@
 import { MessageCircle, ShieldCheck } from "lucide-react";
-import heroImage from "@/assets/hero-bathroom.jpg";
+import heroImage from "@/assets/hero-kitchen.jpg";
 
 const WHATSAPP_URL = "https://wa.me/5491100000000?text=Hola%20Matías%2C%20necesito%20un%20presupuesto";
 
@@ -7,7 +7,7 @@ const Hero = () => (
   <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
     <img
       src={heroImage}
-      alt="Baño con azulejos y grifería"
+      alt="Cocina moderna con muebles y grifería"
       className="absolute inset-0 w-full h-full object-cover"
       width={1920}
       height={1080}
