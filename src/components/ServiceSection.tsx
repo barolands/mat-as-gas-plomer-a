@@ -83,9 +83,16 @@ const ServiceSection = ({
     </div>
 
     {note && (
-      <div className="mt-6 p-4 rounded-xl bg-card border flex items-start gap-3">
-        <AlertTriangle className="w-5 h-5 text-service-gas shrink-0 mt-0.5" />
-        <p className="text-sm text-foreground/80 font-medium">{note}</p>
+      <div className="mt-6 p-4 rounded-xl bg-card border flex items-start gap-1.5">
+        <span
+          className="flex h-5 shrink-0 items-center text-service-gas"
+          aria-hidden
+        >
+          <AlertTriangle className="h-5 w-5" />
+        </span>
+        <p className="min-w-0 flex-1 text-sm font-medium leading-5 text-foreground/80">
+          {note}
+        </p>
       </div>
     )}
   </div>
@@ -121,7 +128,7 @@ const Services = () => (
             "Adaptación de gas licuado a gas natural y viceversa",
             "Limpieza de quemadores, picos y pilotos",
           ]}
-          note="Toda instalación de gas debe ser aprobada por un matriculado"
+          note="Cualquier intervención de gas deberá ser aprobada por un matriculado."
         />
 
         <ServiceSection
