@@ -26,7 +26,12 @@ jobs:
           node-version: "20"
           cache: npm
       - run: npm ci
-      - run: npm run build
+      # El base debe coincidir con el nombre del repo: https://<user>.github.io/<repo>/
+      # Si queda fijo y el repo se llama distinto, los assets dan 404 y el sitio no carga.
+      - name: Build
+        run: |
+          npm run build -- --base=/${{ github.event.repository.name }}/
+          cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
